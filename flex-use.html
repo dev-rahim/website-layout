@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Use</title>
+    <script src="https://kit.fontawesome.com/296ee62560.js" crossorigin="anonymous"></script>
+    <style>
+        .login-containar{
+            display: flex;
+            justify-content: center;      
+            align-items: center; 
+            flex-direction: column;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .login-form input,button{
+            font-size: 1.3em;
+            border: 1px solid lightgray;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+        .login-form button{
+            background-color: orange;
+            color: whitesmoke;
+            font-weight: 700;
+            border-radius: 0px;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            margin-right: 10px;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover{
+            background-color: black;
+            color: whitesmoke;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="http://">Home</a>
+                <a href="http://">Home</a>
+                <a href="http://">Home</a>
+                <a href="http://">Home</a>
+            </span>
+            <span>
+                <a href="http://"><i class="fas fa-user-alt"></i></a>
+                <a href="http://"><i class="fas fa-sign-out-alt"></i></a>
+            </span>
+        </nav>
+    </header>
+    <secton class="login-containar">
+        <form action="" class="login-form">
+            <h2>Login</h2>
+            <input type="email" name="email" placeholder="Your Email" required id="">
+            <input type="password" name="password" id="" placeholder="Your Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </secton>
+</body>
+</html>
